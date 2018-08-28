@@ -22,7 +22,7 @@ POST	| /logout		| User Logout
 
 ## Setting Up:-
 
-Make sure you have Python 3+ installed on your system.
+Make sure you have Python 3+, virtualenv and pip installed on your system.
 
 ### Setup the virtual environment
     
