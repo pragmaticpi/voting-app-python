@@ -1,0 +1,28 @@
+{% extends 'layout.html' %} {% block body %}
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Welcome admin</h1>
+        <p>Current vote status:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Candidate Name</th>
+                    <th>Total Votes</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for candidate in candidate_list %}
+                <tr>
+                    <td>{{ candidate.candidate_name }}</td>
+                    <td>{{ candidate.votes }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+{% endblock %}
